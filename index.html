@@ -1,0 +1,1644 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+    console.log("working")
+const scrollContainer = document.getElementById('scrollContainer');
+const cardWidth = 350 + 20; // Card width plus margin-right
+function scrollNext() {
+    scrollContainer.scrollBy({ left: cardWidth, behavior: 'smooth' });
+}    
+function scrollPrevious() {
+    scrollContainer.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+}
+setInterval(scrollNext,3000)
+})
+    </script>
+    <div class="home-page">
+        <header id="home-page-header" class="home-page-header d-none d-sm-flex align-items-center justify-content-between ">
+            <div>
+                <div>
+                    <ion-icon name="location-outline"></ion-icon><span class="text-muted">23 Ranking Street, New York</span>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon><span  class="text-muted">Email@Example.com</span>
+                </div>
+            </div>
+            <marquee behavior="alternate" direction="right" class="text-muted">Note : We help you to Grow your Business HighTech</marquee>
+            <div class="d-flex">
+                <ion-icon name="logo-facebook" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                <ion-icon name="logo-twitter" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                <ion-icon name="logo-instagram" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                <ion-icon name="logo-linkedin" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+            </div>
+        </header>
+        <div class="container-fluid bg-primary">
+        <nav class="navbar navbar-expand-sm home-page-nav bg-primary container">
+            <h1 class="text-white font-weight-bold">High<span>Tech</span></h1>
+            <button class="navbar-toggler"data-toggle="collapse"data-target="#main1"class="collpase collapse-navbar">
+                <span class="navbar-toggler-icon navicon"></span>
+              </button>
+              <div id="main1" class="collapse navbar-collapse w-25">
+            <ul class="navbar m-auto nav d-flex flex-lg-row flex-column flex-wrap align-items-center justify-content-center">
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tabs">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tabs">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tabs">Service</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tabs">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tabs">Pages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="tabs">Contact</a></li>
+            </ul>
+        </div>
+            <div class="phone-div d-none d-sm-flex">
+                <ion-icon name="call-outline" class="phone-icon"></ion-icon>
+                <span>
+                    <p>Have any questions?</p>
+                    <p class="text-white">Call: + 0123 456 7890</p>
+                </span>
+            </div>
+            <div class="d-none d-sm-block">
+                    <ion-icon name="search-outline" class="text-white h1 p-2" id="search-btn" style="cursor: pointer;"></ion-icon>
+            </div>
+        </nav>
+        
+    </div>
+         <div id="main" class="carousel slide home-page-slider" data-ride="carousel">
+            <div  class="carousel-inner">
+                <div  class="carousel-item active align-content-center " style="background:radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('image/slider-img1.jpg')center/cover">
+                    <div class="slider-content">
+                        <h4>Best IT Solutions</h4>
+                    <h1 class="text-sm">Quality Digital Services You Really Need!</h1>
+                    <p class="text-sm h3">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
+                        <div class="slider-content-btn">
+                            <button class="btn px-5 py-3 m-1">Read More</button>
+                            <button  class="btn px-5 py-3 m-1">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div  class="carousel-item" style="background:radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('image/slider-img2.jpg')center/cover">
+                    <div class="slider-content">
+                        <h4>Best IT Solutions</h4>
+                    <h1>An Innovative IT Solutions Agency</h1>
+                    <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
+                        <div class="slider-content-btn">
+                            <button class="btn px-5 py-3 m-1">Read More</button>
+                            <button  class="btn px-5 py-3 m-1">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#main" class="carousel-control-prev"  data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+        
+              <a href="#main" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+              <ul class="carousel-indicators">
+                <li data-target="#main" data-slide-to="0" class=""></li>
+                <li data-target="#main" data-slide-to="1" class=""></li>
+              </ul>
+        </div>
+         <div class="overlay" style="display:none;">
+            <div class="overlay-content" data-aos="fade-down" data-aos-duration="2000">
+             <input type="text" placeholder="Search">
+             <button><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+            <div>
+             <ion-icon name="close-outline" class="h1 text-white cut"></ion-icon>
+         </div>
+         </div> 
+         <div class="down position-fixed" style="
+         right: 0;
+         top: 500px;
+         margin: 20px 40px;
+         padding:15px 20px;
+         border-radius: 50px;
+         color: #fff;
+         display: none;
+         background-color: #26d48c;
+         z-index: 20;">
+            <ion-icon name="arrow-up-outline" style="font-size: 20px; font-weight: 600;"></ion-icon>
+         </div>
+         <div data-aos="fade-up" data-aos-duration="1000" class="h-auto w-100 box">
+            <div class="container p-5 data d-flex flex-wrap">
+            <div>
+                <span>99</span>
+                <span>Success in getting happy customer</span>
+            </div>
+            <div>
+                <span>25</span>
+                <span>Thousands of successful business</span>
+            </div>
+            <div>
+                <span>120</span>
+                <span>Total clients who love HighTech</span>
+            </div>
+            <div>
+                <span>5</span>
+                <span>Stars reviews given by satisfied clients</span>
+            </div>
+        </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="about-section d-block d-sm-flex align-items-center justify-content-center">
+            <section class="about-section-left h-100 w-50 d-flex align-items-start justify-content-start position-relative ">
+                <img src="image/about-1.jpg" alt="">
+                <img src="image/about-2.jpg" alt="">
+            </section>
+            <section class="about-section-right h-100 w-50 d-flex align-items-start justify-content-center flex-column p-5">
+                <h4 class="text-primary">About Us</h4>
+                <h1>About HighTech Agency And It's Innovative IT Solutions</h1>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
+                <p class="text-muted">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
+                <button>More details</button>
+            </section>
+        </div>
+        <section data-aos="fade-up" data-aos-duration="1000" class="w-auto service-section d-flex align-items-center justify-content-center flex-column">
+            <h4>Our Service</h4>
+            <h1 class="w-50">Services Built Specifically For Your Business</h1>
+            <div class="service-section-content w-100 px-5 d-flex">
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-start flex-column">
+                        <ion-icon name="code-slash-outline" class=""></ion-icon>
+                        <h3 class="font-weight-bold">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3 m-2">Read more</button>
+                    </div>
+                </div>
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <ion-icon name="document-outline"></ion-icon>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <ion-icon name="open-outline"></ion-icon>
+                        <h3>Web Security</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-section-content h-auto w-100 px-5 pb-5 d-flex">
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-start flex-column">
+                        <ion-icon name="code-slash-outline" class=""></ion-icon>
+                        <h3 class="font-weight-bold">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                        <h3>Digital Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                        <h3>Programming</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000" class="project-section d-flex align-items-center justify-content-center flex-column">
+            <h4>Our Projects</h4>
+            <h1>Our Recently Completed Projects</h1>
+            <div class="project-section-content container h-100 w-100">
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-1.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Web Design</h4>
+                        <h6>Web Analysis</h6>
+                    </div>
+                    
+                </div>
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-2.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Cyber Security</h4>
+                        <h6>Cyber security core</h6>
+                    </div>
+                </div>
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-3.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Mobile Info</h4>
+                        <h6>Upcoming Phone</h6>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="project-section-content container h-100 w-100">
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-4.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Web Development</h4>
+                        <h6>Web Analysis</h6>
+                    </div>
+                    
+                </div>
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-5.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Digital Marketing</h4>
+                        <h6>Marketing Analysis</h6>
+                    </div>
+                </div>
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-6.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Keyword Research</h4>
+                        <h6>Keyword Analysis</h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section  data-aos="fade-up" data-aos-duration="1000" class="blog-section d-flex py-3 align-items-center justify-content-center flex-column px-5">
+            <h4>Our Blog</h4>
+            <h1>Latest Blog & News</h1>
+            <div class="h-100 w-100 container d-flex align-items-center justify-content-center">
+                <div class="card-deck h-100 py-5">
+                    <div class="card h-100 d-flex flex-column h-100 w-50">
+                        <div class="p-3 position-absolute px-4" style="z-index: 30; top: -30px; right: 20px; color: #fff; border-radius: 10px; background-color: #1842b6;">Web Design</div>
+                        <div class="card-header" style="background: url('image/blog-1.jpg')center/cover;">
+
+                             <div>
+                                <button class="btn">Read More</button>
+                                <button class="btn"><span><span>Share</span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                                    <span>
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </span>
+                                </button>
+                            </div>
+                                <img src="image/admin.jpg" class="rounded-circle">
+                        </div>
+                        <div class="card-body h-50 p-3 d-flex align-items-center justify-content-center flex-column">
+                            <h4 class="pt-5">By Daniel Martin</h4>
+                            <h6>24 March 2023</h6>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex align-content-center justify-content-between p-2">
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="arrow-redo-outline"></ion-icon><span>5324 Share</span></span>
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="chatbubbles-outline"></ion-icon><span>Comments</span></span>
+                        </div>
+                    </div>
+                    <div class="card h-100 d-flex flex-column h-100 w-50">
+                        <div class="p-3 position-absolute px-4" style="z-index: 30; top: -30px; right: 20px; color: #fff; border-radius: 10px; background-color: #1842b6;">Development</div>
+                        <div class="card-header" style="background: url('image/blog-2.jpg')center/cover;">
+                             <div>
+                                <button class="btn">Read More</button>
+                                <button class="btn"><span><span>Share</span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                                    <span>
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </span>
+                                </button>
+                            </div>
+                                <img src="image/admin.jpg" class="rounded-circle">
+                        </div>
+                        <div class="card-body h-50 p-3 d-flex align-items-center justify-content-center flex-column">
+                            <h4 class="pt-5">By Daniel Martin</h4>
+                            <h6>23 April 2023</h6>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex align-content-center justify-content-between p-2">
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="arrow-redo-outline"></ion-icon><span>5324 Share</span></span>
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="chatbubbles-outline"></ion-icon><span>Comments</span></span>
+                        </div>
+                    </div>
+                    <div class="card h-100 d-flex flex-column h-100 w-50">
+                        <div class="p-3 position-absolute px-4" style="z-index: 30; top: -30px; right: 20px; color: #fff; border-radius: 10px; background-color: #1842b6;">Mobile App</div>
+                        <div class="card-header" style="background: url('image/blog-3.jpg')center/cover;">
+                             <div>
+                                <button class="btn">Read More</button>
+                                <button class="btn"><span><span>Share</span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                                    <span>
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </span>
+                                </button>
+                            </div>
+                                <img src="image/admin.jpg" class="rounded-circle">
+                        </div>
+                        <div class="card-body h-50 p-3 d-flex align-items-center justify-content-center flex-column">
+                            <h4 class="pt-5">By Daniel Martin</h4>
+                            <h6>30 jan 2023</h6>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex align-content-center justify-content-between p-2">
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="arrow-redo-outline"></ion-icon><span>5324 Share</span></span>
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="chatbubbles-outline"></ion-icon><span>Comments</span></span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section  data-aos="fade-up" data-aos-duration="1000"  class="team-section">
+            <div class="container py-5 d-flex align-items-center justify-content-center flex-column">
+                <div class="text-center">
+                    <h4 class="text-primary text-center">Our Team</h4>
+                <h1 class=" text-center">Meet our expert Team</h1>
+                </div>
+                <div class="py-2">
+                    <button class="scroll-button prev " onclick="scrollPrevious()"><ion-icon name="arrow-back-outline" class="text-white"></ion-icon></button>
+                    <button class="scroll-button next" onclick="scrollNext()"><ion-icon name="arrow-forward-outline" class="text-white"></ion-icon></button>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center container" style="width: auto; position: relative;">
+                <div class="card-section" id="scrollContainer">
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-1.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-2.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-3.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-4.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div> 
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-1.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-2.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-3.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-4.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div> 
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-1.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-2.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-3.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-4.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+        </section> 
+        <section  data-aos="fade-up" data-aos-duration="1000"  class="container testimonials-section d-flex align-items-center justify-content-center flex-column">
+            <h4>Our Testimonials</h4>
+            <h1>Our Client Saying!</h1>
+            <div class="container d-flex py-5 px-0 testimonial-container" style="scroll-behavior: smooth; display: flex; align-items: center;
+             justify-content:start; transition: transform 0.5s ease-in-out;">
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-1.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-2.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-4.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-3.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-2.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-3.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex">
+                <button class="circle-dot" onclick="showCard(0)"></button>
+                <button class="circle-dot" onclick="showCard(1)"></button>
+                <button class="circle-dot" onclick="showCard(2)"></button>
+                <button class="circle-dot" onclick="showCard(3)"></button>
+            </div>
+        </section>
+        <section  data-aos="fade-up" data-aos-duration="1000"  class="contact-section d-flex align-items-center justify-content-center flex-column">
+            <h4>Get In Touch</h4>
+            <h1>Contact for any query</h1>
+            <p class="text-muted">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="#">Download Now.</a></p>
+            <div class="container p-3 position-relative ">
+                <header class="d-flex align-items-start justify-content-between p-5">
+                    <div class="d-flex p-2 pr-5 align-items-center justify-content-start">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <div>
+                            <h3>Address</h3>
+                            <Address>23 rank Str, NY</Address>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 pr-5 align-items-center justify-content-start">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <div>
+                            <h3>Call Us</h3>
+                            <Address>+012 3456 7890</Address>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 pr-5 align-items-center justify-content-start">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <div>
+                            <h3>Email Us</h3>
+                            <Address>info@example.com</Address>
+                        </div>
+                    </div>
+                </header>
+                <section class="d-flex align-items-center justify-content-around p-5">
+                    <div class="map p-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14024.93331273803!2d77.27499585!3d28.502626899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1722661804308!5m2!1sen!2sin" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+                    </div>
+                    <form action="" class="d-flex flex-column p-5 align-items-start justify-content-between">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="text" name="project" placeholder="Project">
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <button class="btn px-5 py-3 text-white"> Send Message</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+        <footer  data-aos="fade-up" data-aos-duration="1000"  class="footer-section">
+            <div class="container pt-5 px-0">
+                <div>
+                    <div class="d-flex flex-column">
+                        <h1>High<span>Tech</span></h1> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
+                        <div class="d-flex p-0">
+                            <ion-icon name="logo-facebook" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                            <ion-icon name="logo-twitter" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                            <ion-icon name="logo-instagram" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                            <ion-icon name="logo-linkedin" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h2>Short Link</h2> 
+                        <ul>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>About us</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Contact us</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Our Services</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Our Projects</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Latest Blog</li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h2>Help Link</h2>
+                        <ul>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Terms of use</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Privacy Policy</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Helps</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>FQAs</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Contact</li>
+                        </ul> 
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h2>Contact us</h2> 
+                        <div>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <address>123 Street,New York,USA</address>
+                        </div>
+                        <div>
+                            <ion-icon name="call-outline"></ion-icon>
+                            <address>+123 456 7890</address>
+                        </div>
+                        <div>
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <address>info@example.com</address>
+                        </div>
+                    </div>
+                </div>
+            <footer class="d-flex align-items-center justify-content-between py-3">
+                <div>
+                <span>&copy; Your Site Name,</span>
+                <p>All right reserved</p>
+            </div>
+            <div>
+                <p>Designed by <span>HTML Codex</span>Distributed By <span>Theme Wagon</span></p>
+            </div>
+            </footer>
+        </div>
+        </footer>
+    </div> 
+    <script src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="home-page">
+        <header id="home-page-header" class="home-page-header d-none d-sm-flex align-items-center justify-content-between ">
+            <div>
+                <div>
+                    <ion-icon name="location-outline"></ion-icon><span class="text-muted">23 Ranking Street, New York</span>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon><span  class="text-muted">Email@Example.com</span>
+                </div>
+            </div>
+            <marquee behavior="alternate" direction="right" style="color: #26d48c;">Note : We help you to Grow your Business HighTech</marquee>
+            <div class="d-flex">
+                <ion-icon name="logo-facebook" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                <ion-icon name="logo-twitter" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                <ion-icon name="logo-instagram" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                <ion-icon name="logo-linkedin" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+            </div>
+        </header>
+        <div class="container-fluid bg-primary" id="home-page-nav">
+        <nav class="navbar navbar-expand-sm home-page-nav bg-primary container">
+            <h1 class="text-white font-weight-bold">High<span>Tech</span></h1>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#main1"class="collpase collapse-navbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="main1" class="collapse navbar-collapse w-25">
+            <ul class="navbar p-0 m-auto nav d-flex flex-lg-row flex-column flex-wrap align-items-center justify-content-center" id="ul">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-toggle="tabs">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" data-toggle="tabs">About</a></li>
+                <li class="nav-item"><a href="service.html" class="nav-link" data-toggle="tabs">Service</a></li>
+                <li class="nav-item"><a href="project.html" class="nav-link" data-toggle="tabs">Projects</a></li>
+                <li class="nav-item" id="show"><a href="#" class="nav-link" data-toggle="tabs">Pages<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <ul  data-aos="fade-down" data-aos-duration="1000" >
+                        <li><a href="blog.html">Our Blog</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="testimonial.html">Testimonial</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" data-toggle="tabs">Contact</a></li>
+            </ul>
+        </div>
+            <div class="phone-div d-none d-sm-flex">
+                <ion-icon name="call-outline" class="phone-icon"></ion-icon>
+                <span>
+                    <p>Have any questions?</p>
+                    <p class="text-white">Call: + 0123 456 7890</p>
+                </span>
+            </div>
+            <div class="d-none d-sm-block px-3">
+                <ion-icon name="search-outline" class="text-white h1" id="search-btn"></ion-icon>
+            </div>
+        </nav>
+        
+        </div>
+        <div id="main" class="carousel slide home-page-slider" data-ride="carousel">
+            <div  class="carousel-inner">
+                <div  class="carousel-item active align-content-center " style="background:radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('image/slider-img1.jpg')center/cover">
+                    <div class="slider-content">
+                        <h4>Best IT Solutions</h4>
+                    <h1 class="text-sm">Quality Digital Services You Really Need!</h1>
+                    <p class="text-sm h3">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
+                        <div class="slider-content-btn">
+                            <button class="btn px-5 py-3 m-1">Read More</button>
+                            <button  class="btn px-5 py-3 m-1">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div  class="carousel-item" style="background:radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('image/slider-img2.jpg')center/cover">
+                    <div class="slider-content">
+                        <h4>Best IT Solutions</h4>
+                    <h1>An Innovative IT Solutions Agency</h1>
+                    <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
+                        <div class="slider-content-btn">
+                            <button class="btn px-5 py-3 m-1">Read More</button>
+                            <button  class="btn px-5 py-3 m-1">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#main" class="carousel-control-prev"  data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+        
+              <a href="#main" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+              <ul class="carousel-indicators">
+                <li data-target="#main" data-slide-to="0" class=""></li>
+                <li data-target="#main" data-slide-to="1" class=""></li>
+              </ul>
+        </div>
+        <div class="overlay" style="display:none;">
+            <div class="overlay-content" data-aos="fade-down" data-aos-duration="2000">
+             <input type="text" placeholder="Search">
+             <button><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+            <div>
+             <ion-icon name="close-outline" class="h1 text-white cut"></ion-icon>
+         </div>
+         </div> 
+         <div class="down position-fixed" style="
+         right: 0;
+         top: 500px;
+         margin: 20px 40px;
+         padding:15px 20px;
+         border-radius: 50px;
+         color: #fff;
+         display: none;
+         background-color: #26d48c;
+         z-index: 20;">
+            <ion-icon name="arrow-up-outline" style="font-size: 20px; font-weight: 600;"></ion-icon>
+         </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="h-auto w-100 box" id="home-counter">
+            <div class="container p-5 data d-flex">
+            <div>
+                <span id="counter1"></span>
+                <span>Success in getting happy customer</span>
+            </div>
+            <div>
+                <span id="counter2"></span>
+                <span>Thousands of successful business</span>
+            </div>
+            <div>
+                <span id="counter3"></span>
+                <span>Total clients who love HighTech</span>
+            </div>
+            <div>
+                <span id="counter4"></span>
+                <span>Stars reviews given by satisfied clients</span>
+            </div>
+        </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="about-section d-block d-sm-flex align-items-center justify-content-center flex-wrap">
+            <section class="about-section-left h-100 w-50 d-flex align-items-start justify-content-start position-relative ">
+                <img src="image/about-1.jpg" alt="">
+                <img src="image/about-2.jpg" alt="">
+            </section>
+            <section class="about-section-right h-100 w-50 d-flex align-items-start justify-content-center flex-column p-5">
+                <h4 class="text-primary">About Us</h4>
+                <h1>About HighTech Agency And It's Innovative IT Solutions</h1>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
+                <p class="text-muted">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
+                <button>More details</button>
+            </section>
+        </div>
+        <section data-aos="fade-up" data-aos-duration="1000" class="w-auto service-section d-flex align-items-center justify-content-center flex-column py-5">
+            <h4>Our Service</h4>
+            <h1 class="w-50">Services Built Specifically For Your Business</h1>
+            <div class="card-deck service-section-content h-auto w-100 px-5 pb-5 d-flex">
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-start flex-column">
+                        <ion-icon name="code-slash-outline" class=""></ion-icon>
+                        <h3 class="font-weight-bold">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3 m-2">Read more</button>
+                    </div>
+                </div>
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <ion-icon name="document-outline"></ion-icon>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <ion-icon name="open-outline"></ion-icon>
+                        <h3>Web Security</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-section-content h-auto w-100 px-5 pb-5 d-flex">
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-start flex-column">
+                        <ion-icon name="code-slash-outline" class=""></ion-icon>
+                        <h3 class="font-weight-bold">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                        <h3>Digital Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+                <div class="card  m-5">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                        <h3>Programming</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <button class="btn px-5 py-3  m-2">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000" class="project-section d-flex align-items-center justify-content-center flex-column py-5">
+            <h4>Our Projects</h4>
+            <h1>Our Recently Completed Projects</h1>
+            <div class="project-section-content container h-100 w-100">
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-1.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Web Design</h4>
+                        <h6>Web Analysis</h6>
+                    </div>
+                    
+                </div>
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-2.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Cyber Security</h4>
+                        <h6>Cyber security core</h6>
+                    </div>
+                </div>
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-3.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Mobile Info</h4>
+                        <h6>Upcoming Phone</h6>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="project-section-content container h-100 w-100">
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-4.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Web Development</h4>
+                        <h6>Web Analysis</h6>
+                    </div>
+                    
+                </div>
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-5.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Digital Marketing</h4>
+                        <h6>Marketing Analysis</h6>
+                    </div>
+                </div>
+                <div class="project-section-content-cards">
+                    <div class="box1">box1</div>
+                    <div class="box2">box2</div>
+                    <img src="image/project-6.jpg" alt="" contextmenu="hello">
+                    <div class="text">
+                        <h4>Keyword Research</h4>
+                        <h6>Keyword Analysis</h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000" class="blog-section d-flex py-5 align-items-center justify-content-center flex-column px-5">
+            <h4>Our Blog</h4>
+            <h1>Latest Blog & News</h1>
+            <div class="h-100 w-100 container d-flex align-items-center justify-content-center">
+                <div class="card-deck h-100 py-5">
+                    <div class="card h-100 d-flex flex-column h-100 w-50">
+                        <div class="p-3 position-absolute px-4" style="z-index: 30; top: -30px; right: 20px; color: #fff; border-radius: 10px; background-color: #1842b6;">Web Design</div>
+                        <div class="card-header" style="background: url('image/blog-1.jpg')center/cover;">
+
+                             <div>
+                                <button class="btn">Read More</button>
+                                <button class="btn"><span><span>Share</span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                                    <span>
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </span>
+                                </button>
+                            </div>
+                                <img src="image/admin.jpg" class="rounded-circle">
+                        </div>
+                        <div class="card-body h-50 p-3 d-flex align-items-center justify-content-center flex-column">
+                            <h4 class="pt-5">By Daniel Martin</h4>
+                            <h6>24 March 2023</h6>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex align-content-center justify-content-between p-2">
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="arrow-redo-outline"></ion-icon><span>5324 Share</span></span>
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="chatbubbles-outline"></ion-icon><span>5 Comments</span></span>
+                        </div>
+                    </div>
+                    <div class="card h-100 d-flex flex-column h-100 w-50">
+                        <div class="p-3 position-absolute px-4" style="z-index: 30; top: -30px; right: 20px; color: #fff; border-radius: 10px; background-color: #1842b6;">Development</div>
+                        <div class="card-header" style="background: url('image/blog-2.jpg')center/cover;">
+                             <div>
+                                <button class="btn">Read More</button>
+                                <button class="btn"><span><span>Share</span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                                    <span>
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </span>
+                                </button>
+                            </div>
+                                <img src="image/admin.jpg" class="rounded-circle">
+                        </div>
+                        <div class="card-body h-50 p-3 d-flex align-items-center justify-content-center flex-column">
+                            <h4 class="pt-5">By Daniel Martin</h4>
+                            <h6>23 April 2023</h6>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex align-content-center justify-content-between p-2">
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="arrow-redo-outline"></ion-icon><span>5324 Share</span></span>
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="chatbubbles-outline"></ion-icon><span>5 Comments</span></span>
+                        </div>
+                    </div>
+                    <div class="card h-100 d-flex flex-column h-100 w-50">
+                        <div class="p-3 position-absolute px-4" style="z-index: 30; top: -30px; right: 20px; color: #fff; border-radius: 10px; background-color: #1842b6;">Mobile App</div>
+                        <div class="card-header" style="background: url('image/blog-3.jpg')center/cover;">
+                             <div>
+                                <button class="btn">Read More</button>
+                                <button class="btn"><span><span>Share</span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                                    <span>
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </span>
+                                </button>
+                            </div>
+                                <img src="image/admin.jpg" class="rounded-circle">
+                        </div>
+                        <div class="card-body h-50 p-3 d-flex align-items-center justify-content-center flex-column">
+                            <h4 class="pt-5">By Daniel Martin</h4>
+                            <h6>30 jan 2023</h6>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex align-content-center justify-content-between p-2">
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="arrow-redo-outline"></ion-icon><span>5324 Share</span></span>
+                            <span class="text-white d-flex align-items-center justify-content-center"><ion-icon name="chatbubbles-outline"></ion-icon><span>5 Comments</span></span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section  data-aos="fade-up" data-aos-duration="1000"  class="team-section">
+            <div class="container py-5 d-flex align-items-center justify-content-center flex-column">
+                <div class="text-center">
+                    <h4 class="text-primary text-center">Our Team</h4>
+                <h1 class=" text-center">Meet our expert Team</h1>
+                </div>
+                <div class="py-2">
+                    <button id="scrollprev" class="scroll-button text-white"><ion-icon name="arrow-back-outline"></ion-icon></button>
+                    <button  id="scrollnext" class="scroll-button text-white"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+                </div>  
+            </div>
+            <div class="d-flex align-items-center justify-content-center container" style="width: auto; position: relative;">
+                <div class="card-section" id="scrollContainer">
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-1.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-2.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-3.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-4.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div> 
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-1.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-2.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-3.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-4.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div> 
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-1.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-2.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-3.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards-header"></div>
+                    <div class="cards-profile-image">
+                        <div><img src="image/team-4.jpg" alt=""></div>
+                    </div>
+                    <div class="cards-footer">
+                        <h2>Full Name</h2>
+                        <h6>Designation</h6>
+                        <div class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div> 
+            </div>  
+        </section> 
+        <section  data-aos="fade-up" data-aos-duration="1000"  class="container testimonials-section d-flex align-items-center justify-content-center flex-column">
+            <h4>Our Testimonials</h4>
+            <h1>Our Client Saying!</h1>
+            <div class="container d-flex py-5 px-0 testimonial-container" style="scroll-behavior: smooth; display: flex; align-items: center;
+             justify-content:start; transition: transform 0.5s ease-in-out;">
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-1.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-2.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-4.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-3.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="s tar-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-2.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-1.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h3>Client Name</h3>
+                            <h5>Profession</h5>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <!-- <div class="card p-3  testimonial-card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-2.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h2>Client Name</h2>
+                            <h4>Profession</h4>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                <div class="card p-3  testimonial-card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <img src="image/testimonial-3.jpg" alt="" class=" img-fluid">
+                        <div>
+                            <h2>Client Name</h2>
+                            <h4>Profession</h4>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni, nulla quaerat veritatis praesentium dolorum optio commodi necessitatibus in incidunt Lorem ipsum dolor sit amet.
+                    </div>
+                </div> -->
+            </div>
+            <div class="d-flex">
+                <button class="circle-dot" onclick="showCard(0)"></button>
+                <button class="circle-dot" onclick="showCard(1)"></button>
+                <button class="circle-dot" onclick="showCard(2)"></button>
+                <button class="circle-dot" onclick="showCard(3)"></button>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-duration="1000"  class="contact-section d-flex align-items-center justify-content-center flex-column py-5">
+            <h4>Get In Touch</h4>
+            <h1>Contact for any query</h1>
+            <p class="text-muted">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="#">Download Now.</a></p>
+            <div class="container p-3 position-relative ">
+                <header class="d-flex align-items-start justify-content-between p-5">
+                    <div class="d-flex p-2 pr-5 align-items-center justify-content-start">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <div>
+                            <h3>Address</h3>
+                            <Address>23 rank Str, NY</Address>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 pr-5 align-items-center justify-content-start">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <div>
+                            <h3>Call Us</h3>
+                            <Address>+012 3456 7890</Address>
+                        </div>
+                    </div>
+                    <div class="d-flex p-2 pr-5 align-items-center justify-content-start">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <div>
+                            <h3>Email Us</h3>
+                            <Address>info@example.com</Address>
+                        </div>
+                    </div>
+                </header>
+                <section class="d-flex align-items-center justify-content-around p-5">
+                    <div class="map p-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14024.93331273803!2d77.27499585!3d28.502626899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1722661804308!5m2!1sen!2sin" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+                    </div>
+                    <form action="" class="d-flex flex-column p-5 align-items-start justify-content-between">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="text" name="project" placeholder="Project">
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <button class="btn px-5 py-3 text-white"> Send Message</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+        <footer  data-aos="fade-up" data-aos-duration="1000"  class="footer-section">
+            <div class="container pt-5 px-0">
+                <div>
+                    <div class="d-flex flex-column">
+                        <h1>High<span>Tech</span></h1> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
+                        <div class="d-flex p-0">
+                            <ion-icon name="logo-facebook" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                            <ion-icon name="logo-twitter" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                            <ion-icon name="logo-instagram" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                            <ion-icon name="logo-linkedin" class="p-2 rounded-circle text-primary bg-white h5 m-1"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h2>Short Link</h2> 
+                        <ul>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>About us</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Contact us</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Our Services</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Our Projects</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Latest Blog</li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h2>Help Link</h2>
+                        <ul>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Terms of use</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Privacy Policy</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Helps</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>FQAs</li>
+                            <li><ion-icon name="chevron-forward-outline"></ion-icon>Contact</li>
+                        </ul> 
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h2>Contact us</h2> 
+                        <div>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <address>123 Street,New York,USA</address>
+                        </div>
+                        <div>
+                            <ion-icon name="call-outline"></ion-icon>
+                            <address>+123 456 7890</address>
+                        </div>
+                        <div>
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <address>info@example.com</address>
+                        </div>
+                    </div>
+                </div>
+            <footer class="d-flex align-items-center justify-content-between py-3">
+                <div>
+                <span>&copy; Your Site Name,</span>
+                <p>All right reserved</p>
+            </div>
+            <div>
+                <p>Designed by <span>HTML Codex</span>Distributed By <span>Theme Wagon</span></p>
+            </div>
+            </footer>
+        </div>
+        </footer> 
+    </div>
+    <script src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
